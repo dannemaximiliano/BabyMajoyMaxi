@@ -5,25 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semanas de Embarazo</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
         <h1>Majo y Maxi</h1>
-        <p>Contador de semanas</p>
+        <p>❤️ Contando las semanas para conocerte</p>
     </header>
     <main>
         <section class="contadores">
             <div class="contador" id="transcurrido">
-                <h2>Semanas y días transcurridos</h2>
+                <div class="contador-header">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h2>Tiempo juntos</h2>
+                </div>
                 <p class="valor"></p>
+                <p class="valor-secundario"></p>
             </div>
             <div class="contador" id="restante">
-                <h2>Semanas restantes</h2>
+                <div class="contador-header">
+                    <i class="fas fa-hourglass-half"></i>
+                    <h2>Tiempo que falta para conocernos</h2>
+                </div>
                 <p class="valor"></p>
+                <p class="valor-secundario"></p>
             </div>
-            <div class="contador" id="falta-nacimiento">
-                <h2>Faltan para el nacimiento</h2>
-                <p class="valor"></p>
+            <div class="contador" id="desarrollo-bebe">
+                <div class="contador-header">
+                    <i class="fas fa-baby"></i>
+                    <h2>Desarrollo del bebé</h2>
+                </div>
+                <p class="fecha-parte">Fecha probable de parto: 31/01/2026</p>
+                <p class="semana-actual"></p>
+                <p class="hito-desarrollo"></p>
             </div>
         </section>
     </main>

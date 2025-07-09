@@ -13,6 +13,21 @@ header {
     padding: 2rem 1rem 1rem 1rem;
 }
 
+header h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #6d4e9e;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(109, 78, 158, 0.1);
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #a078c8;
+    margin: 0;
+}
+
 main {
     flex: 1;
     display: flex;
@@ -44,8 +59,21 @@ main {
     box-shadow: 0 8px 24px rgba(160, 120, 200, 0.18);
 }
 
-.contador h2 {
+.contador-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
     margin-bottom: 1rem;
+}
+
+.contador-header i {
+    font-size: 1.5rem;
+    color: #a078c8;
+}
+
+.contador h2 {
+    margin: 0;
     color: #a078c8;
     font-size: 1.2rem;
 }
@@ -54,6 +82,36 @@ main {
     font-size: 2rem;
     font-weight: bold;
     color: #6d4e9e;
+    margin-bottom: 0.5rem;
+}
+
+.contador .valor-secundario {
+    font-size: 1rem;
+    color: #a078c8;
+    margin: 0;
+    font-style: italic;
+}
+
+.contador .fecha-parte {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #6d4e9e;
+    margin-bottom: 1rem;
+}
+
+.contador .semana-actual {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #a078c8;
+    margin-bottom: 0.8rem;
+}
+
+.contador .hito-desarrollo {
+    font-size: 1rem;
+    color: #6d4e9e;
+    line-height: 1.4;
+    margin: 0;
+    text-align: left;
 }
 
 footer {
@@ -78,5 +136,8 @@ footer {
     }
     header {
         padding: 1.5rem 0.5rem 0.5rem 0.5rem;
+    }
+    header h1 {
+        font-size: 2.5rem;
     }
 } 
