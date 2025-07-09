@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #f8fafc 0%, #e0c3fc 100%);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 1rem 1rem 1rem;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contadores {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    width: 100%;
+    max-width: 900px;
+}
+
+.contador {
+    background: #fff6fb;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 16px rgba(160, 120, 200, 0.12);
+    padding: 2rem 1.5rem;
+    min-width: 220px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.contador:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(160, 120, 200, 0.18);
+}
+
+.contador h2 {
+    margin-bottom: 1rem;
+    color: #a078c8;
+    font-size: 1.2rem;
+}
+
+.contador .valor {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #6d4e9e;
+}
+
+footer {
+    background: #f3e7fa;
+    color: #6d4e9e;
+    text-align: center;
+    padding: 1rem 0 0.5rem 0;
+    font-size: 1rem;
+    border-top: 1px solid #e0c3fc;
+    margin-top: auto;
+}
+
+@media (max-width: 700px) {
+    .contadores {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+    }
+    .contador {
+        min-width: 0;
+        width: 90vw;
+    }
+    header {
+        padding: 1.5rem 0.5rem 0.5rem 0.5rem;
+    }
+} 
