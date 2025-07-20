@@ -1,5 +1,5 @@
 // Fechas de referencia
-const fechaCero = new Date(2025, 4, 11); // 11/05/2025 (mes 4 porque enero=0)
+const fechaCero = new Date(2025, 3, 27); // 04/05/2025 (mes 4 porque enero=0)
 const fechaNacimiento = new Date(2026, 0, 30); // 30/01/2026
 const semanasTotales = 40;
 
